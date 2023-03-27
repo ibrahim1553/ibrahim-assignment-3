@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ 
+ 
+</head>
+<body>
+
+ <h2 style="text-align: center; color: white; background-color: #342BFA">website to checks whether that number is even or odd </h2>
+
+ <label> Enter Number </label> <br>
+ <input type="number" name="" id="evenOdd" onkeyup="isCheck()">
+ <span id="showMssg" style="color: #FA2B6D;">  </span>
+</br><br>
+
+
+<script>
+ 
+function isCheck(){
+ var num = document.getElementById('evenOdd').value;
+ // alert(num);
+ if((num%2) == 0){
+ document.getElementById('showMssg').innerHTML = "page says "+num+"  is an even number";
+ }
+ else{
+ document.getElementById('showMssg').innerHTML = "page says "+num+"  is an odd number";
+ }
+
+ if(num === ""){
+ document.getElementById('showMssg').innerHTML = "";
+ }
+}
+
+
+
+</script>
+
+</body>
+</html>
